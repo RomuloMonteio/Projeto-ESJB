@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            color: white;
+        }
+        div#inputs{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            border: 1px solid #0ef;
+            box-shadow: 1px 1px 5px #0ef;
+            border-radius: 15px;
+        }
+        input{
+            padding: 10px;
+            margin: 5px;
+            width: 220px;
+            border-radius: 10px;
+            border: 1px solid #0ef;
+            box-shadow: 1px 1px 1px #0ef;
+            background-color: transparent;
+            color: white;
+        }
+        button{
+            padding: 5px;
+            background-color: #0ef;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        div#btn{
+            line-height: 5;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="inputs">
+        <h1>Calcula a sua media</h1>
+        
+            <input type="number" name="n1" id="n1" placeholder="Nota do 1º teste" aria-valuemax="20" aria-valuemin="0">
+            <input type="number" name="n2" id="n2" placeholder="Nota do 2ºteste">
+            <input type="number" name="oea" id="oea" placeholder="Nota de OEA">
+            <div id="resu">Nota =</div>
+            <div id="btn">
+
+
+                <button onclick="somar()">Calcular</button>
+                <button type="reset"><a href="somando.html"  >Limpar</a></button>
+              
+               
+        
+    </div>
+
+    <script>
+    function somar(){
+        var n1 = document.getElementById('n1')
+        var n2 = document.getElementById('n2')
+        var oea = document.getElementById('oea')
+        var res = document.getElementById('resu')
+        var vn1 = Number(n1.value)
+        var vn2 = Number(n2.value)
+        var voea = Number(oea.value)    
+        var soma = (vn1+vn2)*0.4 + voea*0.2
+        res.innerHTML = `<strong>Nota = ${soma.toFixed(2)} </strong>` 
+    
+    }
+    </script>
+</body>
+</html>

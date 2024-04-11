@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+    <link rel="stylesheet" href="/_css/login.css">
+</head>
+<body>
+
+    <nav>
+        <input type="checkbox"  id="check">
+        <label id="men" for="check" class="checkbtn">&#9776</label>
+        <!---->
+        <label  class="logo">ESJB</label>
+        <ul>
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="index.html#sobrenos">Sobre nos</a></li>
+            <li><a href="alunos.html">alunos</a></li>
+            <li><a href="professores.html">Professores</a></li>
+            <li><a href="turmas.html">Turmas</a></li>
+            <li><a class="active" href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!---->
+
+
+    <section id="login">
+        <div id="form" >
+            <form action="index.html" autocomplete="off"  method="get">
+                <h1 >lOGIN</h1>
+                    <div id="nome">
+                        <input  class="in" type="text" id="NOMEE" placeholder="Nome Completo" required></INPut>
+                    </div>
+                    <div id="password">
+                        <input class="in" id="p1"  type="password" placeholder="Criar Password" required>
+                    </div>
+                    <div id="password">
+                        <input class="in" id="p2" type="password" placeholder="Comnfirmar Password" required>
+                    </div>
+                    <div id="check">
+                        <label id="log"><input type="checkbox">Lembre-me</label>
+                        
+                    </div>
+                    <button type="submit" onclick="registar()">Criar Conta</button>
+                    <p>Voce ja tem uma conta? <a id="i" href="login.html">Login</a></p>
+            </form>
+        </div>
+    </section>
+    <script>
+        function registar(){
+        var name = document.getElementById('NOMEE')
+        nom = String(name.value)
+        pas1 = document.getElementById('p1')
+        pas2 = document.getElementById('p2')
+            if (pas1.value == pas2.value) {
+                alert(`${nom} Seja Bem vindo a Escola Secundaria Jorge Barbosa`)
+            }else{
+                alert('Falha na criaçao da sua conta Password incorreto Por favor verifica a sua palavra passe')
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
