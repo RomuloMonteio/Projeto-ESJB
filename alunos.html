@@ -5,14 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alunos</title>
-    <link rel="stylesheet" href="_css/index.css">
+    <link rel="stylesheet" href="css/aluno.css">
     <style>
-        div#teste{
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+       
+
     </style>
 </head>
 <body>
@@ -22,19 +18,280 @@
         <label for="check" class="checkbtn">&#9776</label>
         <!---->
         <label class="logo">ESJB</label>
-        <ul>
+        <ul class="ul">
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#sobrenos">Sobre nos</a></li>
             <li><a class="active" href="alunos.html">alunos</a></li>
             <li><a href="professores.html">Professores</a></li>
             <li><a href="turmas.html">Turmas</a></li>
+
             <li><a href="login.html">Login</a></li>
         </ul>
     </nav>
 
+
+    
+
     <!---->
-    <div id="teste">
-        <h1>Alunos</h1>
-    </div>
+    <section id="aluno">
+        <div  class="Titulo">
+            <div id="tit" class="card-aluno">
+                <div class="img">
+                    
+                </div>
+                <div class="nome">
+                <Span class="nome">Nome</Span>
+                </div>
+                <div class="ano">
+                    <span class="nome">Ano-Truma</span>
+                </div>
+                <div class="area">
+                    <span class="nome">Area</span>
+                </div>
+                <div class="ver-mais">
+                    ver-mais
+                </div>
+            </div>
+        </div>
+
+
+            <div id="aluno1" class="alunos">
+                <div id="aluno" class="card-aluno">
+                    <div class="img">
+                        <img class="img" src="imagens/Default_Illustrate_a_high_school_graduation_ceremony_with_stud_3.jpg">
+                    </div>
+                    <div class="nome">
+                    <Span class="nome1"  >Romulo Monteiro</Span>
+                    <input class="form" type="text" placeholder="Nome do aluno">
+                    </div>
+                    <div class="ano">
+                        <span  class="nome1">12ºE</span>
+                        <input class="form" type="text" placeholder="Ano/Turma" size="10px">
+                    </div>
+                    <div class="area" class="dados">
+                        <span class="nome1" >Ciencias Tecnologicas</span>
+                        <input class="form" type="text" placeholder="Area Especifica">
+                    </div>
+                    <div class="ver-mais">
+                        <button class="btn" onclick="dadosUM()" >+Info</button>
+                        <button class="btn" onclick="Editar()" >Editar</button>
+                    </div>
+                </div>
+                <div id="um" class="inform">
+                    <ul class="inf">
+                        <li class="li">
+                            <span class="nome1">Data de nasc:17/02/2006</span>
+                            <input type="text" class="form" placeholder="Data de Nascimento"> 
+                        </li>
+                        <li class="li">
+                            <span class="nome1">Endereço: Ribeira bote</span> 
+                            <input type="text" class="form" placeholder="Enderço"> 
+                        </li>
+                        <li class="li">
+                            <span class="nome1">CNI:20061702MOO10</span> 
+                            <input type="text" class="form" placeholder="CNI"> 
+                        </li>
+                
+                    </ul>
+                    <button onclick="dadosU()" class="bt">Votar</button>
+                    <button class="bt" onclick="excluir1()" >Excluir</button>
+                </div>
+               
+            </div>
+
+            <!--Aluno 2-->
+            <div id="aluno2" class="alunos">
+                <div id="aluno" class="card-aluno">
+                    <div class="img">
+                        <img class="img" src="imagens/Default_Illustrate_students_studying_in_a_library_6.jpg">
+                    </div>
+                    <div class="nome">
+                    <Span class="nome">José Fortes</Span>
+                    </div>
+                    <div class="ano">
+                        <span class="nome">12ºE</span>
+                    </div>
+                    <div class="area">
+                        <span class="nome">Ciencias Tecnologicas</span>
+                    </div>
+                    <div class="ver-mais">
+                        <button class="btn" onclick="dadosDOIS()" >+Info</button>
+                
+                    </div>
+                </div>
+                <div id="dois" class="inform">
+                    <ul class="inf">
+                        <li class="li">
+                            <span class="dados">Data de nasc:</span> 02/11/2006
+                        </li>
+                        <li class="li">
+                            <span class="dados">Endereço:</span> Maderalzinho
+                        </li>
+                        <li class="li">
+                            <span class="dados">CNI:</span> 20061702MOO10
+                        </li>
+                
+                    </ul>
+                    <button onclick="dadosD()" class="bt">Votar</button>
+                    <button class="bt" onclick="excluir2()" >Excluir</button>
+                </div>
+               
+            </div>
+
+            <!--Aluno 3-->
+            <div id="aluno3" class="alunos">
+                <div id="aluno" class="card-aluno">
+                    <div class="img">
+                        <img class="img" src="imagens/Default_Illustrate_students_studying_in_a_library_3.jpg">
+                    </div>
+                    <div class="nome">
+                    <Span class="nome">Lionel Messi</Span>
+                    </div>
+                    <div class="ano">
+                        <span class="nome">12ºA</span>
+                    </div>
+                    <div class="area">
+                        <span class="nome">humanistica</span>
+                    </div>
+                    <div class="ver-mais">
+                        <button class="btn" onclick="dadosTRES()" >+Info</button>
+                
+                    </div>
+                </div>
+                <div id="tres" class="inform">
+                    <ul class="inf">
+                        <li class="li">
+                            <span class="dados">Data de nasc:</span> 14/05/2008
+                        </li>
+                        <li class="li">
+                            <span class="dados">Endereço:</span> Ribeira bote
+                        </li>
+                        <li class="li">
+                            <span class="dados">CNI:</span> 14022008MOO10
+                        </li>
+                
+                    </ul>
+                    <button onclick="dadosT()" class="bt">Votar</button>
+                    <button class="bt" onclick="excluir3()" >Excluir</button>
+                </div>
+               
+            </div>
+
+            <!--Aluno 4-->
+            <div id="aluno4" class="alunos">
+                <div id="aluno" class="card-aluno">
+                    <div class="img">
+                        <img class="img" src="imagens/Default_Illustrate_students_studying_in_a_library_4.jpg">
+                    </div>
+                    <div class="nome">
+                    <Span class="nome">Jude Belingham</Span>
+                    </div>
+                    <div class="ano">
+                        <span class="nome">12ºF</span>
+                    </div>
+                    <div class="area">
+                        <span class="nome">Economico E Social</span>
+                    </div>
+                    <div class="ver-mais">
+                        <button class="btn" onclick="dadosQUATRO()" >+Info</button>
+                
+                    </div>
+                </div>
+                <div id="quatro" class="inform">
+                    <ul class="inf">
+                        <li class="li">
+                            <span class="dados">Data de nasc:</span> 17/02/2006
+                        </li>
+                        <li class="li">
+                            <span class="dados">Endereço:</span> Ribeira bote
+                        </li>
+                        <li class="li">
+                            <span class="dados">CNI:</span> 20061702MOO10
+                        </li>
+                
+                    </ul>
+                    <button onclick="dadosQ()" class="bt">Votar</button>
+                    <button class="bt" onclick="excluir4()" >Excluir</button>
+                </div>
+               
+            </div>
+       
+
+        
+    </section>
+    
+
+    <script>
+/*script para ver os dados do alunos*/
+        function dadosUM(){
+            var u = document.getElementById('um')
+            u.style.display ='flex'
+        }
+        function dadosU(){
+            var u = document.getElementById('um')
+            u.style.display ='none'
+        }
+        //----------------
+        function dadosDOIS(){
+            var u = document.getElementById('dois')
+            u.style.display ='flex'
+        }
+        function dadosD(){
+            var u = document.getElementById('dois')
+            u.style.display ='none'
+        }
+        //-----------------
+        function dadosTRES(){
+            var u = document.getElementById('tres')
+            u.style.display ='flex'
+        }
+        function dadosT(){
+            var u = document.getElementById('tres')
+            u.style.display ='none'
+        }
+        //----------------
+        function dadosQUATRO(){
+            var u = document.getElementById('quatro')
+            u.style.display ='flex'
+        }
+        function dadosQ(){
+            var u = document.getElementById('quatro')
+            u.style.display ='none'
+        }
+/*script para excluir aluno*/
+        
+function excluir1(){
+    var exclu = document.getElementById('aluno1')
+    var senha = prompt(String(`Por favor digita a sua senha para confirmar a eliminaçao do aluno`)) 
+    exclu.style.display = 'none'
+}
+//----------------
+function excluir2(){
+    var exclu = document.getElementById('aluno2')
+    var senha = prompt(String(`Por favor digita a sua senha para confirmar a eliminaçao do aluno`)) 
+    exclu.style.display = 'none'
+}
+//-------------
+function excluir3(){
+    var exclu = document.getElementById('aluno3')
+    var senha = prompt(String(`Por favor digita a sua senha para confirmar a eliminaçao do aluno`)) 
+    exclu.style.display = 'none'
+}
+//------------
+function excluir4(){
+    var exclu = document.getElementById('aluno4')
+    var senha = prompt(String(`Por favor digita a sua senha para confirmar a eliminaçao do aluno`)) 
+    exclu.style.display = 'none'
+}
+
+//*******Editar alunos**********
+function Editar(){
+     var span = document.getElementsByClassName('nome1')[0]
+     var input = document.getElementsByClassName('form')[0]
+     span.style.display= 'none'
+     input.style.display='block'
+}
+
+    </script>
 </body>
 </html>

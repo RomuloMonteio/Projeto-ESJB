@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alunos</title>
-    <link rel="stylesheet" href="/_css/login.css">
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
 
@@ -45,7 +46,7 @@
                         
                     </div>
                     <button type="submit" onclick="registar()">Criar Conta</button>
-                    <p>Voce ja tem uma conta? <a id="i" href="login.html">Login</a></p>
+                    <p>Voce ja tem uma conta? <a id="i" href="index.html">Login</a></p>
             </form>
         </div>
     </section>
@@ -55,8 +56,11 @@
         nom = String(name.value)
         pas1 = document.getElementById('p1')
         pas2 = document.getElementById('p2')
-            if (pas1.value == pas2.value) {
-                alert(`${nom} Seja Bem vindo a Escola Secundaria Jorge Barbosa`)
+            if (pas1.value == pas2.value  ) {
+                if ( nom == name.value) {
+                    alert(`${nom} Seja Bem vindo a Escola Secundaria Jorge Barbosa`)
+                }
+                
             }else{
                 alert('Falha na criaçao da sua conta Password incorreto Por favor verifica a sua palavra passe')
             }

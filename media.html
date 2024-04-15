@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            color: #000000;
+        }
+        /*header*/
+nav{
+    background-color: #fce5ce;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #000000b2;
+   
+}
+label{
+    color: #000000;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 2 3px;
+}
+nav ul li a {
+    color: #000000;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 5px;
+    transform: all 1s;
+}
+a.active,a:hover{
+    background-color:#492300;
+    transition: .5s;
+    color: white;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*fim do header*/
+        section{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fce5ce;
+            color: white;
+        }
+        div#inputs{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            box-shadow: 2px 2px 15px #492300;
+            border-radius: 15px;
+        }
+        input{
+            padding: 10px;
+            margin: 5px;
+            width: 220px;
+            border-radius: 10px;
+            border: none;
+            border-bottom: 1px solid #492300;
+            background-color: transparent;
+            color: black;
+        }
+        
+        button{
+            margin-top: 15px;
+            background-color: #492300;
+            color: white;
+            border-radius: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+        
+        div#btn{
+            line-height: 5;
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        input::placeholder{
+            color: black;
+        }
+
+        @media (max-width:952px) {
+   
+   label.logo{
+       font-size: 30px;
+       padding-left: 50px;
+   }
+   nav ul li a {
+       font-size: 16x;
+   }
+   h1#titulo1{
+       font-size: 23pt;
+   }
+   div#master{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       
+   }
+}
+@media (max-width:858px) {
+    .checkbtn{
+        display: block;
+    }
+   
+    ul{
+        border-top: 1px solid rgb(112, 83, 29) ;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:#fce5ce;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        
+    }
+    a.active,a:hover{
+        background-color:#492300;
+        transition: .5s;
+        color: white;
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+    h1#titulo1{
+        font-weight: 200;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox"  id="check">
+        <label for="check" class="checkbtn">&#9776</label>
+        <!---->
+        <label class="logo">ESJB</label>
+        <ul class="ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#sobrenos">Sobre nos</a></li>
+            <li><a class="active" href="alunos.html">alunos</a></li>
+            <li><a href="professores.html">Professores</a></li>
+            <li><a href="turmas.html">Turmas</a></li>
+
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+<section>
+    
+        <div id="inputs">
+            <h1>Calcula a sua media</h1>
+    
+                <input type="number" name="n1" id="n1" placeholder="Nota do 1º teste" aria-valuemax="20" aria-valuemin="0">
+                <input type="number" name="n2" id="n2" placeholder="Nota do 2ºteste">
+                <input type="number" name="oea" id="oea" placeholder="Nota de OEA">
+                <div id="resu">Nota =</div>
+                <div id="btn">
+    
+    
+                    <button onclick="somar()">Calcular</button>
+                    <button type="reset"><a href="somando.html"  >Limpar</a></button>
+    
+    
+    
+        </div>
+</section>
+
+    <script>
+    function somar(){
+        var n1 = document.getElementById('n1')
+        var n2 = document.getElementById('n2')
+        var oea = document.getElementById('oea')
+        var res = document.getElementById('resu')
+        var vn1 = Number(n1.value)
+        var vn2 = Number(n2.value)
+        var voea = Number(oea.value)    
+        var soma = (vn1+vn2)*0.4 + voea*0.2
+        res.innerHTML = `<strong>Nota = ${soma.toFixed(2)} </strong>` 
+    
+    }
+    </script>
+</body>
+</html>
