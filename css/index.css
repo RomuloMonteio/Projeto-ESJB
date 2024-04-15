@@ -62,20 +62,20 @@ a.active,a:hover{
 /*inicio do home*/
 @keyframes animate {
     20%{
-        background: url('../imagens/fundo-04.jpg');
+        background: url('../imagens/fundo04.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     40%{
-        background: url('../imagens/_funfo-03.jpg');
+        background: url('../imagens/funfo03.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
     60%{
-        background: url('../imagens/_funfo-02.jpg');
+        background: url('../imagens/funfo02.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -84,7 +84,7 @@ a.active,a:hover{
 
 section#home{
     height: 90vh;
-    background: url('../imagens/_fundo-01.jpg');
+    background: url('../imagens/fundo01.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
