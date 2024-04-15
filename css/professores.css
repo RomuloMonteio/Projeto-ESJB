@@ -77,6 +77,9 @@ a.active,a:hover{
         align-items: center;
         
     }
+    label.logo{
+        font-size: 20pt;
+       }
 }
 
 @media (max-width:858px) {

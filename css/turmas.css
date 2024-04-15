@@ -116,5 +116,8 @@ a.active,a:hover{
     h1#titulo1{
         font-weight: 200;
     }
+    label.logo{
+        font-size: 20pt;
+       }
     
 }

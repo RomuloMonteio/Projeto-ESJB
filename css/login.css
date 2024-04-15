@@ -155,6 +155,9 @@ a#i{
     h1#titulo1{
         font-size: 23pt;
     }
+    label.logo{
+        font-size: 20pt;
+       }
 }
 @media (max-width:858px) {
     .checkbtn{
