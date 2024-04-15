@@ -21,6 +21,11 @@ label{
     line-height: 80px;
     padding: 0 10px;
 }
+label#log{
+    color: #000000;
+    line-height: 0px;
+    padding: 0px
+}
 
 .logo{
     color: #492300;
