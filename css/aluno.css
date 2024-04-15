@@ -17,15 +17,17 @@ nav{
 }
 label{
     color: #000000;
-    font-size: 30px;
     line-height: 80px;
-    padding: 0 50px;
-    font-weight: bold;
+    padding: 0 10px;
 }
 nav ul{
     float: right;
     margin-right: 20px;
-
+}
+.logo{
+    color: #492300;
+    font-weight: bold;
+    font-size: 20pt;
 }
 nav ul li{
     display: inline-block;
@@ -63,6 +65,7 @@ a.active,a:hover{
 section#aluno{
     height: 100vh;
     padding-top: 80px;
+
 }   
 div.alunos{
     display: flex;
@@ -186,7 +189,7 @@ div.ver-mais{
 span.nome1{
     display: block;
 }
-input.form{
+input.form,input.nform{
     display: none;
     padding: 2px;
     margin-left: 20px;
@@ -195,9 +198,33 @@ input.form{
     border-bottom: 1px solid rgba(0, 0, 0, 0.418);
     text-align: center;
 }
+input.nform{
+    display: flex;
+}
+div#aluno5{
+    display: none;
+}
+button.adicionar{
+    background-color: #492300;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    height: 42px;
+    margin-right: 10px;
+    right: 110px;
+    margin-bottom: 50px ;
+    width: 120px;
+}
+
+
 
 @media (max-width:952px) {
-   
+        button.adicionar{          
+            left: 38%; 
+            margin: 5px;                                       
+        }
     label.logo{
         font-size: 30px;
         padding-left: 50px;
@@ -255,10 +282,13 @@ input.form{
     h1#titulo1{
         font-weight: 200;
     }
-    input.form{
+    input.nform{
         padding: 2px;
         width: 100%;
     }
+    label.logo{
+        font-size: 20pt;
+       }
 }
 @media (max-width:941px) {
     section#aluno{

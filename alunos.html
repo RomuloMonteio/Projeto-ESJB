@@ -58,10 +58,10 @@
             <div id="aluno1" class="alunos">
                 <div id="aluno" class="card-aluno">
                     <div class="img">
-                        <img class="img" src="imagens/Default_Illustrate_a_high_school_graduation_ceremony_with_stud_3.jpg">
+                        <img class="img" src="imagens/foto de perfil.png">
                     </div>
                     <div class="nome">
-                    <Span class="nome1"  >Romulo Monteiro</Span>
+                    <Span class="nome1">Romulo Monteiro</Span>
                     <input class="form" type="text" placeholder="Nome do aluno">
                     </div>
                     <div class="ano">
@@ -74,14 +74,14 @@
                     </div>
                     <div class="ver-mais">
                         <button class="btn" onclick="dadosUM()" >+Info</button>
-                        <button class="btn" onclick="Editar()" >Editar</button>
+                        
                     </div>
                 </div>
                 <div id="um" class="inform">
                     <ul class="inf">
                         <li class="li">
                             <span class="nome1">Data de nasc:17/02/2006</span>
-                            <input type="text" class="form" placeholder="Data de Nascimento"> 
+                            <input type="datetime" class="form" placeholder="Data de Nascimento"> 
                         </li>
                         <li class="li">
                             <span class="nome1">Endereço: Ribeira bote</span> 
@@ -103,7 +103,7 @@
             <div id="aluno2" class="alunos">
                 <div id="aluno" class="card-aluno">
                     <div class="img">
-                        <img class="img" src="imagens/Default_Illustrate_students_studying_in_a_library_6.jpg">
+                        <img class="img" src="imagens/foto de perfil.png">
                     </div>
                     <div class="nome">
                     <Span class="nome">José Fortes</Span>
@@ -142,7 +142,7 @@
             <div id="aluno3" class="alunos">
                 <div id="aluno" class="card-aluno">
                     <div class="img">
-                        <img class="img" src="imagens/Default_Illustrate_students_studying_in_a_library_3.jpg">
+                        <img class="img" src="imagens/foto de perfil.png">
                     </div>
                     <div class="nome">
                     <Span class="nome">Lionel Messi</Span>
@@ -181,7 +181,7 @@
             <div id="aluno4" class="alunos">
                 <div id="aluno" class="card-aluno">
                     <div class="img">
-                        <img class="img" src="imagens/Default_Illustrate_students_studying_in_a_library_4.jpg">
+                        <img class="img" src="imagens/foto de perfil.png">
                     </div>
                     <div class="nome">
                     <Span class="nome">Jude Belingham</Span>
@@ -213,8 +213,53 @@
                     <button onclick="dadosQ()" class="bt">Votar</button>
                     <button class="bt" onclick="excluir4()" >Excluir</button>
                 </div>
-               
+                
             </div>
+            
+            <!--5-->
+            <div id="aluno5" class="alunos">
+                <div id="aluno" class="card-aluno">
+                    <div class="img">
+                        <img class="img" src="imagens/foto de perfil.png">
+                    </div>
+                    <div class="nome">
+                    <input class="nform" type="text" placeholder="Nome do aluno">
+                    </div>
+                    <div class="ano">
+                       
+                        <input class="nform" type="text" placeholder="Ano/Turma" size="10px">
+                    </div>
+                    <div class="area" class="dados">
+                       
+                        <input class="nform" type="text" placeholder="Area Especifica">
+                    </div>
+                    <div class="ver-mais">
+                        <button class="btn" onclick="dadosCINCO()" >+Info</button>
+                       
+                    </div>
+                </div>
+                <div id="cinco" class="inform">
+                    <ul class="inf">
+                        <li class="li">
+                            
+                            <input type="date" class="nform" placeholder="Data de Nascimento"> 
+                        </li>
+                        <li class="li">
+                          
+                            <input type="text" class="nform" placeholder="Enderço"> 
+                        </li>
+                        <li class="li">
+                            
+                            <input type="text" class="nform" placeholder="CNI"> 
+                        </li>
+                
+                    </ul>
+                    <button onclick="dadosC()" class="bt">Votar</button>
+                    <button class="bt" onclick="excluir5()" >Excluir</button>
+                </div>
+                
+            </div>
+            <button class="adicionar" onclick="adicionar()" >Adicionar Aluno</button>
        
 
         
@@ -258,6 +303,16 @@
             var u = document.getElementById('quatro')
             u.style.display ='none'
         }
+         //----------------
+         function dadosCINCO(){
+            var u = document.getElementById('cinco')
+            u.style.display ='flex'
+        }
+        function dadosC(){
+            var u = document.getElementById('cinco')
+            u.style.display ='none'
+        }
+         
 /*script para excluir aluno*/
         
 function excluir1(){
@@ -283,6 +338,13 @@ function excluir4(){
     var senha = prompt(String(`Por favor digita a sua senha para confirmar a eliminaçao do aluno`)) 
     exclu.style.display = 'none'
 }
+//------------
+function excluir5(){
+    var exclu = document.getElementById('aluno5')
+    var senha = prompt(String(`Por favor digita a sua senha para confirmar a eliminaçao do aluno`)) 
+    exclu.style.display = 'none'
+}
+
 
 //*******Editar alunos**********
 function Editar(){
@@ -291,7 +353,12 @@ function Editar(){
      span.style.display= 'none'
      input.style.display='block'
 }
+/*******Adicionar aluno*/
 
+function adicionar(){
+    adicionar=document.getElementById('aluno5')
+    adicionar.style.display ='flex'
+}
     </script>
 </body>
 </html>
