@@ -180,7 +180,6 @@ p.p{
 
 /**/
 @media (max-width:952px) {
-   
     label.logo{
         font-size: 30px;
         padding-left: 50px;
@@ -195,19 +194,16 @@ p.p{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: center;
-        
+        align-items: center;    
     }
     label.logo{
         font-size: 20pt;
        }
 }
-
 @media (max-width:858px) {
     .checkbtn{
         display: block;
     }
-   
     ul{
         border-top: 1px solid rgb(112, 83, 29) ;
         position: fixed;
@@ -233,12 +229,10 @@ p.p{
         transition: .5s;
         color: white;
     }
-    
     #check:checked ~ ul{
         left: 0;
     }
     h1#titulo1{
         font-weight: 200;
     }
-    
 }
