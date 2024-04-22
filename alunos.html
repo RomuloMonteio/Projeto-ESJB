@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alunos</title>
     <link rel="stylesheet" href="css/aluno.css">
-    <style>
-       
-
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -34,25 +33,9 @@
 
     <!---->
     <section id="aluno">
-        <div  class="Titulo">
-            <div id="tit" class="card-aluno">
-                <div class="img">
-                    
-                </div>
-                <div class="nome">
-                <Span class="nome">Nome</Span>
-                </div>
-                <div class="ano">
-                    <span class="nome">Ano-Truma</span>
-                </div>
-                <div class="area">
-                    <span class="nome">Area</span>
-                </div>
-                <div class="ver-mais">
-                    ver-mais
-                </div>
-            </div>
-        </div>
+        
+            <h1 id="h1titulo">Alunos da ESJB</h1>
+        
 
                 <!--aluno 1-->
         <div id="aluno1" class="alunos">
@@ -279,9 +262,86 @@
                     <button class="bt" onclick="excluir3()" >Excluir</button>
                 </div>
                 </div>
+            </div>
+            <!--aluno 2-->
+            <div id="aluno5" class="alunos">
+                <div id="textaluno2" class="card-aluno" >
+                    <div class="img">
+                        <img class="img" src="imagens/bellingam-fotor-bg-remover-202404227570.png">
+                    </div>
+                    <div class="nome">
+                    <Span class="nome1">Jude bellingam</Span>
+                    </div>
+                    <div class="ano">
+                        <span  class="nome1">12ºF<Fig></Fig></span>
+                        
+                    </div>
+                    <div class="area" class="dados">
+                        <span class="nome1" >Humanistica</span>
+                    
+                    </div>
+                    <div class="ver-mais">
+                        <button class="btn" onclick="dadosDOIS()" >+Info</button>
+                        <button class="btn" onclick="editar2()" >Editar</button>
+                    </div>
+                </div>
+                <!-- Editar aluno 2-->
+                <div id="editar2" class="card-aluno">
+                    <div class="img">
+                            <img class="img" src="imagens/bellingam-fotor-bg-remover-202404227570.png">
+                    </div>
+                    <div class="nome">
+                        <input class="form" type="text" placeholder="Nome do aluno" value="Jude belligam">
+                    </div>
+                    <div class="ano">
+                        <input class="form" type="text" placeholder="Ano/Turma" size="10px" value="12F">
+                    </div>
+                    <div class="area" class="dados">
+                        <input class="form" type="text" placeholder="Area Especifica" value="Humanistica">
+                    </div>
+                    <div class="ver-mais">
+                        <button class="btn" onclick="dadosDOIS()" >+Info</button>
+                        <button class="btn" onclick="comfirmar()" >Guardar</button>
+                    </div>
+                </div>
+                <!--inf de aluno 1-->
+                <div id="dois" class="inform">
+                    <ul id="info2" class="inf">
+                        <li class="li">
+                            <span class="nome1">Data de nasc:17/08/2006</span>
+                            
+                        </li>
+                        <li class="li">
+                            <span class="nome1">Endereço: Maderalzinho</span> 
+                            
+                        </li>
+                        <li class="li">
+                            <span class="nome1">CNI:20060405M7PP5</span> 
+                            
+                        </li>
+                    </ul>
+                    <ul id="edit-info2" class="inf">
+                            <li class="li">
+                                <input class="form" type="date" placeholder="Data de nascimento">
+                            </li>
+                            <li class="li">
+                                <input class="form" type="text" placeholder="Endereço" value="Maderalzinho">                        
+                            </li>
+                            <li class="li">
+                                <input class="form" type="text" placeholder="CNI/BI" value="CNI:20060405M7PP5">                            
+                            </li>
+    
+                    </ul>
+                <div class="ver-mais">
+                    <button onclick="dadosD()" class="bt">Votar</button>
+                    <button class="bt" onclick="excluir2()" >Excluir</button>
+                </div>
+                </div>
                 
-                
+            </div>
             <button class="adicionar" onclick="adicionar()" >Adicionar Aluno</button>
+                
+            
     </section>
     
 

@@ -1,6 +1,6 @@
 @charset "utf-8";
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto';
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -208,14 +208,21 @@ button.adicionar{
     height: 42px;
     margin-bottom: 50px ;
     width: 120px;
+    margin-left: 45%;
 }
+@keyframes example {
+    to{ transform:rotateY(360deg);}
+}
+h1#h1titulo{
+    color: #492300;
+    text-align: center;
+    padding: 20px;
+    animation: example 10s infinite linear;
 
-
-
+}
 @media (max-width:952px) {
         button.adicionar{          
-            left: 38%; 
-            margin: 5px;                                       
+            margin-left: 40%;                                      
         }
         label.logo{
             font-size: 30px;
@@ -224,9 +231,7 @@ button.adicionar{
         nav ul li a {
             font-size: 16x;
         }
-        h1#titulo1{
-            font-size: 23pt;
-        }
+       
         div#master{
             display: flex;
             justify-content: center;
@@ -237,8 +242,6 @@ button.adicionar{
             font-size: 20pt;
            }
 }
-
-
 @media (max-width:858px) {
     .checkbtn{
         display: block;
@@ -274,9 +277,7 @@ button.adicionar{
     #check:checked ~ ul{
         left: 0;
     }
-    h1#titulo1{
-        font-weight: 200;
-    }
+   
     input.nform{
         padding: 2px;
         width: 100%;
@@ -290,31 +291,15 @@ button.adicionar{
         height: 100vh;
         padding-top: 80px;
     }   
-   
     div.card-aluno{
 
         height: 120px;
         width:98%;
         display: flex;
-        text-align: center;
-       
+        text-align: center; 
     }
-    
-    div.Titulo{
-        width: 98%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: -30px 40px;
-        font-size: large;
-        color: #492300;
-    }
-    div#tit{
-        border:none ;
-    }
-    div.inform{
 
+    div.inform{
         border-top: none;
         height: 220px;
         width: 98%;
@@ -349,8 +334,8 @@ button.btn:hover{
 }
 }
 @media (max-width:682px) {
-    div.img{
-
+    button.adicionar{          
+        margin-left: 37%;                                      
     }
    div#editar1,div#editar2,div#editar3,div#editar4{
     flex-direction: column; 
