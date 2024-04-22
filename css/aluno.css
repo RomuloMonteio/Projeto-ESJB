@@ -83,6 +83,7 @@ div.card-aluno{
     display: flex;
     text-align: center;
     margin: 10px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.575);
 }
 div.Titulo{
     width: 100%;
@@ -97,12 +98,15 @@ div#tit{
     border:none ;
 }
 div.inform{
-    border-top: none;
+    border: none;
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.575);
+    padding-bottom:5px;
+ 
 }
 div#um,div#dois,div#tres,div#quatro{
     display: none;
@@ -178,11 +182,7 @@ div.ver-mais{
     align-items: center;
 }
 /**/
-span.nome1{
-    display: block;
-}
-input.form,input.nform{
-    display: none;
+input.form{
     padding: 2px;
     margin-left: 20px;
     border: none;
@@ -190,8 +190,12 @@ input.form,input.nform{
     border-bottom: 1px solid rgba(0, 0, 0, 0.418);
     text-align: center;
 }
-input.nform{
-    display: flex;
+ul#edit-info1{
+    display: none;
+}
+
+div#editar1{
+    display: none;
 }
 div#aluno5{
     display: none;
@@ -290,19 +294,14 @@ button.adicionar{
         height: 100vh;
         padding-top: 80px;
     }   
-    div.alunos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
+   
     div.card-aluno{
-        border: 1px solid black;
+
         height: 120px;
         width:98%;
         display: flex;
         text-align: center;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.575);
+       
     }
     
     div.Titulo{
@@ -319,7 +318,7 @@ button.adicionar{
         border:none ;
     }
     div.inform{
-        border: 1px solid black;
+
         border-top: none;
         height: 220px;
         width: 98%;
@@ -352,4 +351,38 @@ button.bt{
 button.btn:hover{
     padding: 10px;
 }
+}
+@media (max-width:682px) {
+    div.img{
+        position: absolute;
+        left: 2%;
+    }
+   div#editar1{
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+   }
+   input.form{
+    width: 500px;
+}
+    div.card-aluno{
+        height: 180px;
+        border: 1px solid #dddd;
+    }
+    /*alunos*/
+    div.card-aluno{
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+       }
+       input.form{
+        width: 500px;
+    }
+        div.card-aluno{
+            height: 180px;
+            border: 1px solid #dddd;
+        }
+        div#tit{
+            flex-direction: row;
+        }
 }

@@ -54,211 +54,80 @@
             </div>
         </div>
 
-
-            <div id="aluno1" class="alunos">
-                <div id="aluno" class="card-aluno">
-                    <div class="img">
-                        <img class="img" src="imagens/foto de perfil.png">
-                    </div>
-                    <div class="nome">
-                    <Span class="nome1">Romulo Monteiro</Span>
-                    <input class="form" type="text" placeholder="Nome do aluno">
-                    </div>
-                    <div class="ano">
-                        <span  class="nome1">12ºE</span>
-                        <input class="form" type="text" placeholder="Ano/Turma" size="10px">
-                    </div>
-                    <div class="area" class="dados">
-                        <span class="nome1" >Ciencias Tecnologicas</span>
-                        <input class="form" type="text" placeholder="Area Especifica">
-                    </div>
-                    <div class="ver-mais">
-                        <button class="btn" onclick="dadosUM()" >+Info</button>
-                        
-                    </div>
+                <!--aluno 1-->
+        <div id="aluno1" class="alunos">
+            <div id="textaluno1" class="card-aluno" >
+                <div class="img">
+                    <img class="img" src="imagens/Default_Illustrate_a_high_school_graduation_ceremony_with_stud_3.jpg">
                 </div>
-                <div id="um" class="inform">
-                    <ul class="inf">
-                        <li class="li">
-                            <span class="nome1">Data de nasc:17/02/2006</span>
-                            <input type="datetime" class="form" placeholder="Data de Nascimento"> 
-                        </li>
-                        <li class="li">
-                            <span class="nome1">Endereço: Ribeira bote</span> 
-                            <input type="text" class="form" placeholder="Enderço"> 
-                        </li>
-                        <li class="li">
-                            <span class="nome1">CNI:20061702MOO10</span> 
-                            <input type="text" class="form" placeholder="CNI"> 
-                        </li>
-                        <button onclick="dadosU()" class="bt">Votar</button>
-                        <button class="bt" onclick="excluir1()" >Excluir</button>
-                    </ul>
+                <div class="nome">
+                <Span class="nome1">Romulo Monteiro</Span>
+                </div>
+                <div class="ano">
+                    <span  class="nome1">12ºE</span>
                     
                 </div>
-               
+                <div class="area" class="dados">
+                    <span class="nome1" >Ciencias Tecnologicas</span>
+                
+                </div>
+                <div class="ver-mais">
+                    <button class="btn" onclick="dadosUM()" >+Info</button>
+                    <button class="btn" onclick="editar1()" >Editar</button>
+                </div>
             </div>
+            <!-- Editar aluno 1-->
+            <div id="editar1" class="card-aluno">
+                <div class="img">
+                    <img class="img" src="imagens/Default_Illustrate_a_high_school_graduation_ceremony_with_stud_3.jpg">
+                </div>
+                <div class="nome">
+                    <input class="form" type="text" placeholder="Nome do aluno" value="Romulo Monteiro">
+                </div>
+                <div class="ano">
+                    <input class="form" type="text" placeholder="Ano/Turma" size="10px" value="12E">
+                </div>
+                <div class="area" class="dados">
+                    <input class="form" type="text" placeholder="Area Especifica" value="Ciencias Tecnologicas">
+                </div>
+                <div class="ver-mais">
+                    <button class="btn" onclick="dadosUM()" >+Info</button>
+                    <button class="btn" onclick="comfirmar()" >comfirm</button>
+                </div>
+            </div>
+            <!--inf de aluno 1-->
+            <div id="um" class="inform">
+                <ul id="info1" class="inf">
+                    <li class="li">
+                        <span class="nome1">Data de nasc:17/02/2006</span>
+                        
+                    </li>
+                    <li class="li">
+                        <span class="nome1">Endereço: Ribeira bote</span> 
+                        
+                    </li>
+                    <li class="li">
+                        <span class="nome1">CNI:20061518M77J</span> 
+                        
+                    </li>
+                </ul>
+                <ul id="edit-info1" class="inf">
+                        <li class="li">
+                            <input class="form" type="date" placeholder="Data de nascimento">
+                        </li>
+                        <li class="li">
+                            <input class="form" type="text" placeholder="Endereço" value="Ribeira Bote">                        
+                        </li>
+                        <li class="li">
+                            <input class="form" type="text" placeholder="CNI/BI" value="20061518M77J">                            
+                        </li>
 
-            <!--Aluno 2-->
-            <div id="aluno2" class="alunos">
-                <div id="aluno" class="card-aluno">
-                    <div class="img">
-                        <img class="img" src="imagens/foto de perfil.png">
-                    </div>
-                    <div class="nome">
-                    <Span class="nome">José Fortes</Span>
-                    </div>
-                    <div class="ano">
-                        <span class="nome">12ºE</span>
-                    </div>
-                    <div class="area">
-                        <span class="nome">Ciencias Tecnologicas</span>
-                    </div>
-                    <div class="ver-mais">
-                        <button class="btn" onclick="dadosDOIS()" >+Info</button>
-                
-                    </div>
-                </div>
-                <div id="dois" class="inform">
-                    <ul class="inf">
-                        <li class="li">
-                            <span class="dados">Data de nasc:</span> 02/11/2006
-                        </li>
-                        <li class="li">
-                            <span class="dados">Endereço:</span> Maderalzinho
-                        </li>
-                        <li class="li">
-                            <span class="dados">CNI:</span> 20061702MOO10
-                        </li>
-                
-                    </ul>
-                    <button onclick="dadosD()" class="bt">Votar</button>
-                    <button class="bt" onclick="excluir2()" >Excluir</button>
-                </div>
-               
+                </ul>
+                <button onclick="dadosU()" class="bt">Votar</button>
+                <button class="bt" onclick="excluir1()" >Excluir</button>
             </div>
-
-            <!--Aluno 3-->
-            <div id="aluno3" class="alunos">
-                <div id="aluno" class="card-aluno">
-                    <div class="img">
-                        <img class="img" src="imagens/foto de perfil.png">
-                    </div>
-                    <div class="nome">
-                    <Span class="nome">Lionel Messi</Span>
-                    </div>
-                    <div class="ano">
-                        <span class="nome">12ºA</span>
-                    </div>
-                    <div class="area">
-                        <span class="nome">humanistica</span>
-                    </div>
-                    <div class="ver-mais">
-                        <button class="btn" onclick="dadosTRES()" >+Info</button>
-                
-                    </div>
-                </div>
-                <div id="tres" class="inform">
-                    <ul class="inf">
-                        <li class="li">
-                            <span class="dados">Data de nasc:</span> 14/05/2008
-                        </li>
-                        <li class="li">
-                            <span class="dados">Endereço:</span> Ribeira bote
-                        </li>
-                        <li class="li">
-                            <span class="dados">CNI:</span> 14022008MOO10
-                        </li>
-                
-                    </ul>
-                    <button onclick="dadosT()" class="bt">Votar</button>
-                    <button class="bt" onclick="excluir3()" >Excluir</button>
-                </div>
-               
-            </div>
-
-            <!--Aluno 4-->
-            <div id="aluno4" class="alunos">
-                <div id="aluno" class="card-aluno">
-                    <div class="img">
-                        <img class="img" src="imagens/foto de perfil.png">
-                    </div>
-                    <div class="nome">
-                    <Span class="nome">Jude Belingham</Span>
-                    </div>
-                    <div class="ano">
-                        <span class="nome">12ºF</span>
-                    </div>
-                    <div class="area">
-                        <span class="nome">Economico E Social</span>
-                    </div>
-                    <div class="ver-mais">
-                        <button class="btn" onclick="dadosQUATRO()" >+Info</button>
-                
-                    </div>
-                </div>
-                <div id="quatro" class="inform">
-                    <ul class="inf">
-                        <li class="li">
-                            <span class="dados">Data de nasc:</span> 17/02/2006
-                        </li>
-                        <li class="li">
-                            <span class="dados">Endereço:</span> Ribeira bote
-                        </li>
-                        <li class="li">
-                            <span class="dados">CNI:</span> 20061702MOO10
-                        </li>
-                
-                    </ul>
-                    <button onclick="dadosQ()" class="bt">Votar</button>
-                    <button class="bt" onclick="excluir4()" >Excluir</button>
-                </div>
-                
-            </div>
-            
-            <!--5-->
-            <div id="aluno5" class="alunos">
-                <div id="aluno" class="card-aluno">
-                    <div class="img">
-                        <img class="img" src="imagens/foto de perfil.png">
-                    </div>
-                    <div class="nome">
-                    <input class="nform" type="text" placeholder="Nome do aluno">
-                    </div>
-                    <div class="ano">
-                       
-                        <input class="nform" type="text" placeholder="Ano/Turma" size="10px">
-                    </div>
-                    <div class="area" class="dados">
-                       
-                        <input class="nform" type="text" placeholder="Area Especifica">
-                    </div>
-                    <div class="ver-mais">
-                        <button class="btn" onclick="dadosCINCO()" >+Info</button>
-                       
-                    </div>
-                </div>
-                <div id="cinco" class="inform">
-                    <ul class="inf">
-                        <li class="li">
-                            
-                            <input type="date" class="nform" placeholder="Data de Nascimento"> 
-                        </li>
-                        <li class="li">
-                          
-                            <input type="text" class="nform" placeholder="Enderço"> 
-                        </li>
-                        <li class="li">
-                            
-                            <input type="text" class="nform" placeholder="CNI"> 
-                        </li>
-                
-                    </ul>
-                    <button onclick="dadosC()" class="bt">Votar</button>
-                    <button class="bt" onclick="excluir5()" >Excluir</button>
-                </div>
-                
-            </div>
+           
+        </div>
             <button class="adicionar" onclick="adicionar()" >Adicionar Aluno</button>
        
 
@@ -347,17 +216,28 @@ function excluir5(){
 
 
 //*******Editar alunos**********
-function Editar(){
-     var span = document.getElementsByClassName('nome1')[0]
-     var input = document.getElementsByClassName('form')[0]
-     span.style.display= 'none'
-     input.style.display='block'
-}
-/*******Adicionar aluno*/
+function editar1(){
+    aluno = document.getElementById('textaluno1')
+    editar = document.getElementById('editar1')
+    aluno.style.display = 'none'
+    editar.style.display = 'flex'
+    //informaçoes dos alunos
+    info = document.getElementById('info1')
+    editinfo = document.getElementById('edit-info1')
+    info.style.display = 'none'
+    editinfo.style.display ='flex'
 
+}
+//*******Adicionar aluno
 function adicionar(){
     adicionar=document.getElementById('aluno5')
     adicionar.style.display ='flex'
+}
+
+function comfirmar(){
+    alert('Aluno registado')
+
+    
 }
     </script>
 </body>
