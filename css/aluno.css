@@ -190,11 +190,11 @@ input.form{
     border-bottom: 1px solid rgba(0, 0, 0, 0.418);
     text-align: center;
 }
-ul#edit-info1,ul#edit-info2,ul#edit-info3,ul#edit-info4{
+ul#edit-info1,ul#edit-info2,ul#edit-info3{
     display: none;
 }
 
-div#editar1,div#editar2,div#editar3,div#editar4{
+div#editar1,div#editar2,div#editar3{
     display: none;
 }
 div#aluno5{
@@ -350,19 +350,15 @@ button.btn:hover{
 }
 @media (max-width:682px) {
     div.img{
-        position: absolute;
-        left: 2%;
+
     }
    div#editar1,div#editar2,div#editar3,div#editar4{
     flex-direction: column; 
     justify-content: center;
     align-items: center;
    }
-   input.form{
-    width: 500px;
-}
+
     div.card-aluno{
-        height: 180px;
         border: 1px solid #dddd;
     }
     /*alunos*/
@@ -370,14 +366,11 @@ button.btn:hover{
         flex-direction: column; 
         justify-content: center;
         align-items: center;
+        height: 300px;
        }
        input.form{
         width: 500px;
     }
-        div.card-aluno{
-            height: 180px;
-            border: 1px solid #dddd;
-        }
         div#tit{
             flex-direction: row;
         }
