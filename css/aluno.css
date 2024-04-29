@@ -6,6 +6,26 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+div#button{
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+#add:hover{
+    padding: 11px
+}
+input#chec{
+    display: none;
+}
+label#add{
+    color: white;
+    background-color: #492300;
+    padding: 10px;
+    border-radius: 10px ;
+    
+    box-shadow: 2px 2px 15px rgb(54, 54, 54);
+}
 /*header*/
 nav{
     background-color: #fce5ce;
@@ -84,6 +104,11 @@ div.card-aluno{
     text-align: center;
     margin: 10px 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.575);
+    /*cores*/
+    background-color: #fce5ce;
+    border-radius: 15px;
+    box-shadow: #492300 1px 1px 10px;
+
 }
 div.Titulo{
     width: 100%;
@@ -130,7 +155,6 @@ button.bt{
     width: 120px;
 }
 ul.inf{
-    height: 100%;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -183,18 +207,26 @@ div.ver-mais{
 }
 /**/
 input.form{
+    font-size: 12pt;
     padding: 2px;
     margin-left: 20px;
     border: none;
     width: 130px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.418);
     text-align: center;
+    background-color: transparent;
+}
+::placeholder{
+    color: #000000;
 }
 ul#edit-info1,ul#edit-info2,ul#edit-info3{
     display: none;
 }
 
 div#editar1,div#editar2,div#editar3{
+    display: none;
+}
+ul#Cinco{
     display: none;
 }
 div#aluno5{
@@ -210,15 +242,44 @@ button.adicionar{
     width: 120px;
     margin-left: 45%;
 }
+
+
 @keyframes example {
-    to{ transform:rotateY(360deg);}
+    to{ transform:translate(100%);}
 }
 h1#h1titulo{
     color: #492300;
-    text-align: center;
-    padding: 20px;
-    animation: example 10s infinite linear;
 
+    padding: 20px;
+    animation: example 30s infinite linear;
+
+}
+@media (max-width:1200px){
+    div.card-aluno{
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        border: 1px solid #dddd;
+       }
+       /*/*/
+    input.form{
+    font-size: 12pt;
+    padding: 2px;
+    margin-left: 20px;
+    border: none;
+    width: 130px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+    text-align: center;
+}
+    div.inf orm{
+        border-top: none;
+        height: 220px;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media (max-width:952px) {
         button.adicionar{          
@@ -258,7 +319,6 @@ h1#h1titulo{
         transition: all .5s;
         text-align: center;
     }
-
     nav ul li{
         display: block;
         margin: 50px 0px;
@@ -278,10 +338,7 @@ h1#h1titulo{
         left: 0;
     }
    
-    input.nform{
-        padding: 2px;
-        width: 100%;
-    }
+
     label.logo{
         font-size: 20pt;
        }
@@ -291,15 +348,26 @@ h1#h1titulo{
         height: 100vh;
         padding-top: 80px;
     }   
+
+    /**/
     div.card-aluno{
-
-        height: 120px;
-        width:98%;
-        display: flex;
-        text-align: center; 
-    }
-
-    div.inform{
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        border: 1px solid #dddd;
+       }
+       /*/*/
+    input.form{
+    font-size: 12pt;
+    padding: 2px;
+    margin-left: 20px;
+    border: none;
+    width: 130px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+    text-align: center;
+}
+    div.inf {
         border-top: none;
         height: 220px;
         width: 98%;
@@ -334,29 +402,22 @@ button.btn:hover{
 }
 }
 @media (max-width:682px) {
-    button.adicionar{          
-        margin-left: 37%;                                      
-    }
+                                  
+    
    div#editar1,div#editar2,div#editar3,div#editar4{
     flex-direction: column; 
     justify-content: center;
     align-items: center;
    }
 
-    div.card-aluno{
-        border: 1px solid #dddd;
-    }
+ 
     /*alunos*/
     div.card-aluno{
         flex-direction: column; 
         justify-content: center;
         align-items: center;
         height: 300px;
+        border: 1px solid #dddd;
        }
-       input.form{
-        width: 500px;
-    }
-        div#tit{
-            flex-direction: row;
-        }
+    
 }
