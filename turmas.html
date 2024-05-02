@@ -22,18 +22,448 @@
         <label for="check" class="checkbtn">&#9776</label>
         <!---->
         <label class="logo">ESJB</label>
-        <ul>
-            <li><a  href="index.html">Home</a></li>
-            <li><a href="alunos.html">alunos</a></li>
+        <ul class="ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="alunos.html">alunos</a></li>
             <li><a href="professores.html">Professores</a></li>
             <li><a class="active" href="turmas.html">Turmas</a></li>
+
             <li><a href="login.html">Login</a></li>
         </ul>
     </nav>
 
+
+    
+
     <!---->
-    <div id="teste">
-        <h1>turmas</h1>
-    </div>
+    <section id="aluno">
+        
+            <h1 id="h1titulo">Turmas da ESJB</h1>
+        
+
+                <!--aluno 1-->
+        <div id="aluno1" class="alunos">
+            <div id="textaluno1" class="card-aluno" >
+                <div class="img">
+                    <img class="img" src="imagens/Default_Create_a_classroom_scene_3.jpg">
+                </div>
+                
+                <div class="nome">
+                <Span class="nome1">Turma A</Span>
+                </div>
+                <div class="ano">
+                    <span  class="nome1">Sala:22</span>
+                    
+                </div>
+                <div class="area" class="dados">
+                    <span class="nome1" >Ciencias Tecnologicas</span>
+                
+                </div>
+                <div class="ver-mais">
+                    <button class="btn" onclick="dadosUM()" >+Info</button>
+                    <button class="btn" onclick="editar1()" >Editar</button>
+                </div>
+            </div>
+            <!-- Editar aluno 1-->
+            <div id="editar1" class="card-aluno">
+                <div class="img">
+                        <img class="img" src="imagens/Default_Create_a_classroom_scene_3.jpg">
+                </div>
+                <div class="nome">
+                    <input class="form" type="text" placeholder="Nome da Turma" value="Turma: A">
+                </div>
+                <div class="ano">
+                    <input class="form" type="text" placeholder="Sala" size="10px" value="Sala:22">
+                </div>
+                <div class="area" class="dados">
+                    <input class="form" type="text" placeholder="Area Especifica" value="Ciencias Tecnologicas">
+                </div>
+                <div class="ver-mais">
+                    <button class="btn" onclick="dadosUM()" >+Info</button>
+                    <button class="btn" onclick="comfirmar()" >Guardar</button>
+                </div>
+            </div>
+            <!--inf de aluno 1-->
+            <div id="um" class="inform">
+                <ul id="info1" class="inf">
+                    <li class="li">
+                        <span class="nome1">12º Ano</span>
+                        
+                    </li>
+                    <li class="li">
+                        <span class="nome1">DiretorT: Arlinda Falcao</span> 
+                        
+                    </li>
+                    <li class="li">
+                        <span class="nome1">Codigo: 005</span> 
+                        
+                    </li>
+                </ul>
+                <ul id="edit-info1" class="inf">
+                        <li class="li">
+                            <input class="form" type="text" placeholder="12ºAno">
+                        </li>
+                        <li class="li">
+                            <input class="form" type="text" placeholder="Diretor de turma" value="Arlinda Falcao">                        
+                        </li>
+                        <li class="li">
+                            <input class="form" type="text" placeholder="Codigo de turma" value="005">     
+                        </li>
+
+                </ul>
+            <div class="ver-mais">
+                <button onclick="dadosU()" class="bt">Votar</button>
+                <button class="bt" onclick="excluir1()" >Excluir</button>
+            </div>
+            </div>
+        </div>
+            <!--aluno 2-->
+            <div id="aluno2" class="alunos">
+                <div id="textaluno2" class="card-aluno" >
+                    <div class="img">
+                        <img class="img" src="imagens/Default_Create_a_classroom_scene_3.jpg">
+                    </div>
+                    <div class="nome">
+                        <Span class="nome1">Turma B</Span>
+                        </div>
+                        <div class="ano">
+                            <span  class="nome1">Sala:23</span>
+                            
+                        </div>
+                        <div class="area" class="dados">
+                            <span class="nome1" >Humanistica</span>
+                        
+                        </div>
+                    <div class="ver-mais">
+                        <button class="btn" onclick="dadosDOIS()" >+Info</button>
+                        <button class="btn" onclick="editar2()" >Editar</button>
+                    </div>
+                </div>
+                <!-- Editar aluno 2-->
+                <div id="editar2" class="card-aluno">
+                    <div class="img">
+                            <img class="img" src="imagens/Default_Create_a_classroom_scene_3.jpg">
+                    </div>
+                    <div class="nome">
+                        <input class="form" type="text" placeholder="Nome da Turma" value="Turma: B">
+                    </div>
+                    <div class="ano">
+                        <input class="form" type="text" placeholder="Sala" size="10px" value="Sala:23">
+                    </div>
+                    <div class="area" class="dados">
+                        <input class="form" type="text" placeholder="Area Especifica" value="Humanis">
+                    </div>
+                    <div class="ver-mais">
+                        <button class="btn" onclick="dadosDOIS()" >+Info</button>
+                        <button class="btn" onclick="comfirmar()" >Guardar</button>
+                    </div>
+                </div>
+                <!--inf de aluno 2-->
+                <div id="dois" class="inform">
+                    <ul id="info2" class="inf">
+                        <li class="li">
+                            <span class="nome1">11º Ano</span>
+                            
+                        </li>
+                        <li class="li">
+                            <span class="nome1">DiretorT: Arlinda Falcao</span> 
+                            
+                        </li>
+                        <li class="li">
+                            <span class="nome1">Codigo: 003</span> 
+                            
+                        </li>
+                    </ul>
+                    <ul id="edit-info2" class="inf">
+                        <li class="li">
+                            <input class="form" type="text" placeholder="Ano" value="11ºAno">
+                        </li>
+                        <li class="li">
+                            <input class="form" type="text" placeholder="Diretor de turma" value="Arlinda Falcao">                        
+                        </li>
+                        <li class="li">
+                            <input class="form" type="text" placeholder="Codigo de turma" value="003">     
+                        </li>
+    
+                    </ul>
+                <div class="ver-mais">
+                    <button onclick="dadosD()" class="bt">Votar</button>
+                    <button class="bt" onclick="excluir2()" >Excluir</button>
+                </div>
+                </div>
+            </div>
+                            <!--aluno 3-->
+            <div id="aluno3" class="alunos">
+                <div id="textaluno3" class="card-aluno" >
+                    <div class="img">
+                        <img class="img" src="imagens/Default_Create_a_classroom_scene_3.jpg">
+                    </div>
+                    <div class="nome">
+                        <Span class="nome1">Turma C</Span>
+                        </div>
+                        <div class="ano">
+                            <span  class="nome1">Sala:23</span>
+                            
+                        </div>
+                        <div class="area" class="dados">
+                            <span class="nome1" >Humanistica</span>
+                    
+                        </div>
+                    
+                    <div class="ver-mais">
+                        <button class="btn" onclick="dadosTRES()" >+Info</button>
+                        <button class="btn" onclick="editar3()" >Editar</button>
+                    </div>
+                </div>
+                <!-- Editar aluno 3-->
+                <div id="editar3" class="card-aluno">
+                    <div class="img">
+                            <img class="img" src="imagens/Default_Create_a_classroom_scene_3.jpg">
+                    </div>
+                    <div class="nome">
+                        <input class="form" type="text" placeholder="Nome da Turma" value="Turma: C">
+                    </div>
+                    <div class="ano">
+                        <input class="form" type="text" placeholder="Sala" size="10px" value="Sala:23">
+                    </div>
+                    <div class="area" class="dados">
+                        <input class="form" type="text" placeholder="Area Especifica" value="Humanis">
+                    </div>
+                    <div class="ver-mais">
+                        <button class="btn" onclick="dadosTRES()" >+Info</button>
+                        <button class="btn" onclick="comfirmar()" >Guardar</button>
+                    </div>
+                </div>
+                <!--inf de aluno 3-->
+                <div id="tres" class="inform">
+                    <ul id="info3" class="inf">
+                        <li class="li">
+                            <span class="nome1">11º Ano</span>
+                            
+                        </li>
+                        <li class="li">
+                            <span class="nome1">DiretorT: Arlinda Falcao</span> 
+                            
+                        </li>
+                        <li class="li">
+                            <span class="nome1">Codigo: 003</span> 
+                            
+                        </li>
+                    </ul>
+                    <ul id="edit-info3" class="inf">
+                        <li class="li">
+                            <input class="form" type="text" placeholder="Ano" value="11ºAno">
+                        </li>
+                        <li class="li">
+                            <input class="form" type="text" placeholder="Diretor de turma" value="Arlinda Falcao">                        
+                        </li>
+                        <li class="li">
+                            <input class="form" type="text" placeholder="Codigo de turma" value="003">     
+                        </li>
+                    </ul>
+                <div class="ver-mais">
+                    <button onclick="dadosT()" class="bt">Votar</button>
+                    <button class="bt" onclick="excluir3()" >Excluir</button>
+                </div>
+                </div>
+            </div>
+            <!--aluno 5-->
+            <div id="aluno5" class="alunos">
+                <div id="textaluno2" class="card-aluno" >
+
+                        <div class="img">
+                                <img class="img" src="imagens/Default_Create_a_classroom_scene_3.jpg" alt="">
+                        </div>
+                        <div class="nome">
+                            <input class="form" type="text" placeholder="Nome do Tuma" >
+                        </div>
+                        <div class="ano">
+                            <input class="form" type="text" placeholder="Sala" size="10px" >
+                        </div>
+                        <div class="area" class="dados">
+                            <input class="form" type="text" placeholder="Area Especifica" >
+                        </div>
+                        <div class="ver-mais">
+                            <button class="btn" onclick="dadosCINCO()" >+Info</button>
+                            <button class="btn" onclick="comfirmar()" >Guardar</button>
+                        </div>
+                    </div>
+                </div>
+                    <ul id="Cinco" class="inf">
+                            <li class="li">
+                                <input class="form" type="text" placeholder="Ano">
+                            </li>
+                            <li class="li">
+                                <input class="form" type="text" placeholder="Diretor Turma" >                        
+                            </li>
+                            <li class="li">
+                                <input class="form" type="text" placeholder="Codigo" >                            
+                            </li>
+                            <div class="ver-mais">
+                                <button onclick="dadosC()" class="bt">Votar</button>
+                                <button class="bt" onclick="excluir5()" >Excluir</button>
+                            </div>
+                    </ul>
+                </div>
+                <div id="button">
+                    <label for="chec" id="add" onclick="adicionar()">Adicionar</label>
+                    <input type="checkbox" name="chec" checked id="chec">
+                </div>
+            </div>
+            </section>
+    
+
+    <script>
+/*script para ver os dados do alunos*/
+        function dadosUM(){
+            var u = document.getElementById('um')
+            u.style.display ='flex'
+        }
+        function dadosU(){
+            var u = document.getElementById('um')
+            u.style.display ='none'
+        }
+        //----------------
+        function dadosDOIS(){
+            var u = document.getElementById('dois')
+            u.style.display ='flex'
+        }
+        function dadosD(){
+            var u = document.getElementById('dois')
+            u.style.display ='none'
+        }
+        //-----------------
+        function dadosTRES(){
+            var u = document.getElementById('tres')
+            u.style.display ='flex'
+        }
+        function dadosT(){
+            var u = document.getElementById('tres')
+            u.style.display ='none'
+        }
+        //----------------
+        function dadosQUATRO(){
+            var u = document.getElementById('quatro')
+            u.style.display ='flex'
+        }
+        function dadosQ(){
+            var u = document.getElementById('quatro')
+            u.style.display ='none'
+        }
+         //----------------
+         function dadosCINCO(){
+            var u = document.getElementById('Cinco')
+            u.style.display ='flex'
+        }
+        function dadosC(){
+            var u = document.getElementById('Cinco')
+            u.style.display ='none'
+        }
+         
+/*script para excluir aluno*/
+        
+function excluir1(){
+    var exclu = document.getElementById('aluno1')
+    var senha = prompt(String(`Por favor digita a sua senha para confirmar a eliminaçao do Turma`)) 
+    if (senha.length == 0){
+        alert('Por Favor digite a Sua palavra-passe')
+    }else{
+        exclu.style.display = 'none'
+    }
+}
+//----------------
+function excluir2(){
+    var exclu = document.getElementById('aluno2')
+    var senha = prompt(String(`Por favor digita a sua senha para confirmar a eliminaçao do Turma`)) 
+    if (senha.length == 0){
+        alert('Por Favor digite a Sua palavra-passe')
+    }else{
+        exclu.style.display = 'none'
+    }
+}
+//-------------
+function excluir3(){
+    var exclu = document.getElementById('aluno3')
+    var senha = prompt(String(`Por favor digita a sua senha para confirmar a eliminaçao do Turma`)) 
+    if (senha.length == 0){
+        alert('Por Favor digite a Sua palavra-passe')
+    }else{
+        exclu.style.display = 'none'
+    }
+}
+//------------
+function excluir4(){
+    var exclu = document.getElementById('aluno4')
+    var senha = prompt(String(`Por favor digita a sua senha para confirmar a eliminaçao do Turma`)) 
+    if (senha.length == 0){
+        alert('Por Favor digite a Sua palavra-passe')
+    }else{
+        exclu.style.display = 'none'
+    }
+}
+//------------
+function excluir5(){
+    var exclu = document.getElementById('aluno5')
+    var senha = prompt(String(`Por favor digita a sua senha para confirmar a eliminaçao da Truma`)) 
+    if (senha.length == 0){
+        alert('Por Favor digite a Sua palavra-passe')
+    }else{
+        exclu.style.display = 'none'
+    }
+}
+
+
+//*******Editar alunos**********
+function editar1(){
+    aluno = document.getElementById('textaluno1')
+    editar = document.getElementById('editar1')
+    aluno.style.display = 'none'
+    editar.style.display = 'flex'
+    //informaçoes dos alunos
+    info = document.getElementById('info1')
+    editinfo = document.getElementById('edit-info1')
+    info.style.display = 'none'
+    editinfo.style.display ='flex'
+
+}
+function editar2(){
+    aluno = document.getElementById('textaluno2')
+    editar = document.getElementById('editar2')
+    aluno.style.display = 'none'
+    editar.style.display = 'flex'
+    //informaçoes dos alunos
+    info = document.getElementById('info2')
+    editinfo = document.getElementById('edit-info2')
+    info.style.display = 'none'
+    editinfo.style.display ='flex'
+
+}
+function editar3(){
+    aluno = document.getElementById('textaluno3')
+    editar = document.getElementById('editar3')
+    aluno.style.display = 'none'
+    editar.style.display = 'flex'
+    //informaçoes dos alunos
+    info = document.getElementById('info3')
+    editinfo = document.getElementById('edit-info3')
+    info.style.display = 'none'
+    editinfo.style.display ='flex'
+
+}
+//*******Adicionar aluno
+function adicionar(){
+    adicionar=document.getElementById('aluno5')
+    adicionar.style.display ='flex'
+    let chec = document.getElementById('chec')
+    let add = document.getElementById('add')
+    if (chec.checked){
+        add.style.display = 'none'
+    
+}
+}
+function comfirmar(){
+    alert('Turma registado')   
+}
+    </script>
 </body>
 </html>

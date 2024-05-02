@@ -81,8 +81,8 @@ a.active,a:hover{
             align-items: center;
             width: 400px;
             height: 400px;
-            box-shadow: 2px 2px 15px #492300;
-            border-radius: 15px;
+            box-shadow: 10px 10px 15px #492300;
+            border-radius: 25px;
         }
         input{
             padding: 10px;
@@ -117,7 +117,10 @@ a.active,a:hover{
         }
 
         @media (max-width:952px) {
-   
+            div#inputs{
+                height: 60%;
+                width: 60%;
+            }
    label.logo{
        font-size: 30px;
        padding-left: 50px;
@@ -133,15 +136,15 @@ a.active,a:hover{
        justify-content: center;
        flex-direction: column;
        align-items: center;
-       
    }
 }
 @media (max-width:858px) {
     .checkbtn{
         display: block;
+        padding: 0px 20px;
     }
    
-    ul{
+    ul.ul{
         border-top: 1px solid rgb(112, 83, 29) ;
         position: fixed;
         width: 100%;
@@ -170,10 +173,11 @@ a.active,a:hover{
     #check:checked ~ ul{
         left: 0;
     }
-    h1#titulo1{
-        font-weight: 200;
-    }
-    
+   
+
+    label.logo{
+        font-size: 20pt;
+       }
 }
     </style>
 </head>
@@ -205,7 +209,7 @@ a.active,a:hover{
     
     
                     <button onclick="somar()">Calcular</button>
-                    <button type="reset"><a href="somando.html"  >Limpar</a></button>
+                    <button type="reset" onclick="limpar()">Limpar</button>
     
     
     
@@ -223,7 +227,16 @@ a.active,a:hover{
         var voea = Number(oea.value)    
         var soma = (vn1+vn2)*0.4 + voea*0.2
         res.innerHTML = `<strong>Nota = ${soma.toFixed(2)} </strong>` 
-    
+    }
+    function limpar(){
+        let n1 = document.getElementById('n1')
+        let n2 = document.getElementById('n2')
+        let oea = document.getElementById('oea')
+        let res = document.getElementById('resu')
+        n1.value = ''
+        n2.value = ''
+        oea.value= ''
+        res.innerHTML= 'Nota ='
     }
     </script>
 </body>

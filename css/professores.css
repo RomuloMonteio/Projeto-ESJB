@@ -1,10 +1,30 @@
 @charset "utf-8";
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto';
     padding: 0;
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+}
+div#button{
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+#add:hover{
+    padding: 11px
+}
+input#chec{
+    display: none;
+}
+label#add{
+    color: white;
+    background-color: #492300;
+    padding: 10px;
+    border-radius: 10px ;
+    
+    box-shadow: 2px 2px 15px rgb(54, 54, 54);
 }
 /*header*/
 nav{
@@ -13,7 +33,11 @@ nav{
     width: 100%;
     position: fixed;
     border-bottom: 1px solid #fce5ce;
-   
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
 }
 label{
     color: #000000;
@@ -25,11 +49,6 @@ label{
     color: #492300;
     font-weight: bold;
     font-size: 20pt;
-}
-nav ul{
-    float: right;
-    margin-right: 20px;
-
 }
 nav ul li{
     display: inline-block;
@@ -62,36 +81,239 @@ a.active,a:hover{
     display: none;
 }
 
-@media (max-width:952px) {
-   
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a {
-        font-size: 16x;
-    }
-    h1#titulo1{
-        font-size: 23pt;
-    }
-    div#master{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    label.logo{
-        font-size: 20pt;
-       }
+/*AQlunos*/
+
+section#aluno{
+    height: 100vh;
+    padding-top: 80px;
+
+}   
+div.alunos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div#span{
+    display: flex;
 }
 
+div.card-aluno{
+    height: 120px;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    margin: 10px 0px;
+    /*cores*/
+    background-color: #fce5ce;
+    box-shadow: #492300 1px 1px 10px;
+}
+div.Titulo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    color: #492300;
+}
+div#tit{
+    border:none ;
+}
+div.inform{
+    background-color: #fce5ce;
+    margin-top: -9px;
+    border: none;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    box-shadow: #492300 1px 1px 10px;
+}
+div#um,div#dois,div#tres,div#quatro{
+    display: none;
+}
+button.btn,button.bt{
+    padding: 12px;
+    background: #492300;
+    border: 1px solid #492300;
+    color: white;
+    border-radius: 10px;
+    font-size: 12pt;
+    box-shadow: 1px 1px 5px #492300;
+    cursor: pointer;
+    transform: all 0.5s;
+    margin: 5px;
+}
+button.btn:hover{
+    padding: 15px;
+}
+button.bt{    
+    margin: 0px 5px;
+    width: 120px;
+}
+ul.inf{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    margin: auto;
+    /**/
+}
+ul#Cinco{
+    height: 120px;
+    background-color: #fce5ce;
+    width: 50%;
+    margin-top: -9px;
+    margin-bottom: 15px;
+    box-shadow: #492300 1px 1px 10px;
+}
+li.li{
+    padding: 10px;
+}
+div.img{
+    height: 120px;
+    width: 120px;
+}
+img.img{
+    padding: 5px;
+    height: 120px;
+    width: 120px;
+}
+div.nome{
+    height: 120px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span.dados{
+    color: #000000;
+    text-transform: uppercase;
+}
+div.ano{
+
+    height: 120px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.area{
+    height: 120px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.ver-mais{
+    height: 120px;
+    width: 163px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**/
+input.form{
+    font-size: 12pt;
+    padding: 2px;
+    margin-left: 20px;
+    border: none;
+    width: 130px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+    text-align: center;
+    background-color: transparent;
+}
+::placeholder{
+    color: #000000;
+}
+ul#edit-info1,ul#edit-info2,ul#edit-info3{
+    display: none;
+}
+
+div#editar1,div#editar2,div#editar3{
+    display: none;
+}
+ul#Cinco{
+    display: none;
+}
+div#aluno5{
+    display: none;
+}
+button.adicionar{
+    background-color: #492300;
+    border: none;
+    border-radius: 8px;
+    color: white; 
+    height: 42px;
+    margin-bottom: 50px ;
+    width: 120px;
+    margin-left: 45%;
+}
+
+
+@keyframes example {
+    to{ transform:translate(100%);}
+}
+h1#h1titulo{
+    color: #492300;
+    padding: 20px;
+    animation: example 30s infinite linear;
+}
+@media (max-width:1200px){
+    div.card-aluno{
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        border: 1px solid #dddd;
+       }
+       /*/*/
+    input.form{
+    font-size: 12pt;
+    padding: 2px;
+    margin-left: 20px;
+    border: none;
+    width: 130px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+    text-align: center;
+}
+    div.inf {
+        border-top: none;
+        height: 220px;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:952px) {
+        button.adicionar{          
+            margin-left: 40%;                                      
+        }
+        label.logo{
+            font-size: 30px;
+            padding-left: 50px;
+        }
+        nav ul li a {
+            font-size: 16x;
+        }
+        div#master{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;    
+        }
+        label.logo{
+            font-size: 20pt;
+           }
+}
 @media (max-width:858px) {
     .checkbtn{
         display: block;
     }
    
-    ul{
+    ul.ul{
         border-top: 1px solid rgb(112, 83, 29) ;
         position: fixed;
         width: 100%;
@@ -120,8 +342,87 @@ a.active,a:hover{
     #check:checked ~ ul{
         left: 0;
     }
-    h1#titulo1{
-        font-weight: 200;
+   
+
+    label.logo{
+        font-size: 20pt;
+       }
+}
+@media (max-width:941px) {
+    section#aluno{
+        height: 100vh;
+        padding-top: 80px;
+    }   
+
+    /**/
+    div.card-aluno{
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        border: 1px solid #dddd;
+       }
+       /*/*/
+    input.form{
+    font-size: 12pt;
+    padding: 2px;
+    margin-left: 20px;
+    border: none;
+    width: 130px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+    text-align: center;
+}
+    div.inf {
+        border-top: none;
+        height: 220px;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+    div#um,div#dois{
+        display: none;
+    }
+    ul.inf{
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+button.bt{    
+    position: static;
+    height: 42px;
+    margin-right: 10px;
+    right: -10px;
+    margin-top: -60px;
+    width: 120px;
+}
+
+    button.btn{
+        padding: 8px;
+}
+button.btn:hover{
+    padding: 10px;
+}
+}
+@media (max-width:682px) {
+                                  
+    
+   div#editar1,div#editar2,div#editar3,div#editar4{
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+   }
+
+ 
+    /*alunos*/
+    div.card-aluno{
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        border: 1px solid #dddd;
+       }
     
 }
